@@ -28,7 +28,7 @@ public class CityControllerAllCitiesTest {
 		return "http://localhost:8082";
 	}
 
-	@Test
+/*	@Test
 	public void testGetAllCities() {
 		TestRestTemplate testRestTemplate = new TestRestTemplate();
 		HttpHeaders headers = new HttpHeaders();
@@ -38,7 +38,7 @@ public class CityControllerAllCitiesTest {
 		assertNotNull(response.getBody());
 	}
 
-/*	@Test
+	@Test
 	public void testCreateCity() {
 		TestRestTemplate testRestTemplate = new TestRestTemplate();
 		City city = new City("Split");
@@ -83,7 +83,7 @@ public class CityControllerAllCitiesTest {
 			assertEquals(e.getStatusCode(), HttpStatus.NOT_FOUND);
 		}
 	}
-*/
+
 	@Test
 	public void testGetAllItineraries() {
 		TestRestTemplate testRestTemplate = new TestRestTemplate();
@@ -93,5 +93,5 @@ public class CityControllerAllCitiesTest {
 				entity, String.class);
 		assertNotNull(response.getBody());
 	}
-
+*/
 }
