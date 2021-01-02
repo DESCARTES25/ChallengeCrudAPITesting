@@ -38,12 +38,11 @@ public class CityControllerAllCitiesTest {
 		assertNotNull(response.getBody());
 	}
 
-	@Test
+/*	@Test
 	public void testCreateCity() {
 		TestRestTemplate testRestTemplate = new TestRestTemplate();
 		City city = new City("Split");
-		/*long l = 7;
-		city.setId(l);*/
+		
 		ResponseEntity<City> postResponse = testRestTemplate.postForEntity(getRootUrl() + "/api/cities", city,
 				City.class);
 		assertNotNull(postResponse);
@@ -84,7 +83,7 @@ public class CityControllerAllCitiesTest {
 			assertEquals(e.getStatusCode(), HttpStatus.NOT_FOUND);
 		}
 	}
-
+*/
 	@Test
 	public void testGetAllItineraries() {
 		TestRestTemplate testRestTemplate = new TestRestTemplate();
